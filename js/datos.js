@@ -85,37 +85,100 @@ window.AREAS=[
   5.1. DS - Datos Power BI`,
   procs:[['1. Pruebas de Selección','Pruebas y convocatorias (junior y máster) y sus resultados.','o'],['2. Empalme','Accesos, despliegue, prácticas y pasantías de los aplicativos.','o'],['3. Micrositio','Maqueta, formulario y datos de exmonitores.','o'],['4. Documentación Técnica','Manuales, notebooks, bases de datos y automatizaciones.','o'],['5. Informe de Gestión','Datos para Power BI, tablero, informe y presentación.','o']],
   files:['Bitácoras o inventarios generales en 4. Documentación Técnica.','DS - Dashboard Desarrollo - 2026-2 en 5. Informe de Gestión.']},
- {s:'ET',k:'et',n:5,name:'Estrategias Tecnológicas',desc:'Difusión, página web, Semana UIFCE, extensión solidaria, microtalleres y proyectos de estudio.',
-  tree:`1. ET - Consentimiento
-  1.1. ET - Autorizaciones Editables
-  1.2. ET - Consentimientos Firmados PDF
-2. ET - Difusión
-  2.1. ET - Cronograma
-  2.2. ET - Protocolo de Difusión
-  2.3. ET - Línea de Cursos Libres
-  2.4. ET - Imagen Institucional
-  2.5. ET - Piezas Fondo de Pantalla
-  2.6. ET - Historias
-  2.7. ET - Decoración UIFCE
-  2.8. ET - Boletines y Noticias UIFCE
-  2.9. ET - Reels
-  2.10. ET - Fotos UIFCE
-  2.11. ET - Stand de Difusión UIFCE
-3. ET - Página Web
-  3.1. ET - Blog UIFCE
-  3.2. ET - Micrositio
-4. ET - Semana UIFCE
-  4.1. ET - Hackatón
-5. ET - Extensión Solidaria
-6. ET - Microtalleres
-  6.1. ET - Manual de Microtalleres
-  6.n. ET - [Nombre del Microtaller]
-7. ET - Proyectos de Estudio
-  7.n. ET - [Nombre del Proyecto]
-8. ET - Informe de Gestión
-  8.1. ET - Power BI`,
-  procs:[['1. Consentimiento','Autorizaciones de uso de imagen, editables y firmadas en PDF.','o'],['2. Difusión','Cronograma, protocolos, piezas, historias, reels, fotos, boletines y stand.','o'],['3. Página Web','Blog y micrositio de la UIFCE.','o'],['4. Semana UIFCE','Propuestas, presupuesto, anexos y una carpeta por evento.','s'],['5. Extensión Solidaria','Propuesta de extensión solidaria y sus anexos.','s'],['6. Microtalleres','Manual y una carpeta por microtaller dictado.','o'],['7. Proyectos de Estudio','Una carpeta por proyecto de estudio.','o'],['8. Informe de Gestión','Datos de Power BI, informe y presentación.','o']],
-  files:['Lista de monitores y plantilla de autorización en 1. Consentimiento.','Enlaces de difusión en 2. Difusión; diagnóstico web en 3. Página Web.','Control de microtalleres y formatos de inscripción en 6. Microtalleres.']},
+ {s:'ET',k:'et',n:5,name:'Estrategias Tecnológicas',desc:'Planeación del equipo y cuatro líneas de trabajo: articulación interna con las demás áreas, comunicación, eventos y vinculación, y gestión interna.',
+  tree:`1. ET - Planeación y Gestión
+  1.1. ET - Planeación del Semestre
+  1.2. ET - Cronograma
+  1.3. ET - Actas de Reunión
+  1.4. ET - Equipo y Empalme {r}
+  1.5. ET - Presupuesto
+  1.6. ET - Protocolos y Lineamientos
+2. ET - Articulación Interna
+  2.1. ET - Articulación con Apoyos Académicos
+    2.1.1. ET - Cartelera Física
+    2.1.2. ET - Video Apoyos Académicos a Docentes
+    2.1.3. ET - Página de Oferta Permanente
+  2.2. ET - Articulación con Cursos Libres
+    2.2.1. ET - Línea Gráfica
+    2.2.2. ET - Piezas Primer Lanzamiento
+    2.2.3. ET - Piezas Segundo Lanzamiento Halloween
+    2.2.4. ET - Piezas Lanzamiento Especial
+    2.2.5. ET - Video del Aplicativo
+    2.2.6. ET - Sitio Estático de Oferta Permanente
+    2.2.7. ET - Página de Oferta Permanente
+  2.3. ET - Articulación con Desarrollo
+    2.3.1. ET - Tarjetas de Solicitudes UIFCE
+  2.4. ET - Articulación con Virtualización
+    2.4.1. ET - Plantillas Articulate y Genially
+    2.4.2. ET - Póster Encuesta de Automatización
+  2.5. ET - Articulación con Coordinación
+    2.5.1. ET - Infografía de Puntualidad
+    2.5.2. ET - Plantillas de Presentación PowerPoint
+  2.6. ET - Articulación Transversal
+    2.6.1. ET - Acompañamiento Interárea
+3. ET - Comunicación
+  3.1. ET - Producción de Contenido
+    3.1.1. ET - Logo UIFCE Vectorial
+    3.1.2. ET - Uifcito Reutilizable
+    3.1.3. ET - Biblioteca de Videos del Equipo
+    3.1.4. ET - Piezas Gráficas y Material Audiovisual
+    3.1.5. ET - Hacks Informáticos
+    3.1.6. ET - Point of Purchase
+    3.1.7. ET - Campaña Programación de Salones
+    3.1.8. ET - Video Tutorial Programación de Salones
+  3.2. ET - Carteleras y Pantallas
+    3.2.1. ET - Carteleras UIFCE
+    3.2.2. ET - Cápsulas de Tecnología
+    3.2.3. ET - Señalética de Salas
+  3.3. ET - Canales Digitales
+    3.3.1. ET - Micrositio
+    3.3.2. ET - Micrositio Ex Monitores
+    3.3.3. ET - Micrositio Equipo de Trabajo
+    3.3.4. ET - Blog UIFCE
+    3.3.5. ET - Boletín Digital
+    3.3.6. ET - LinkedIn
+    3.3.7. ET - Instagram
+    3.3.8. ET - TikTok
+    3.3.9. ET - YouTube
+    3.3.10. ET - Correo Institucional de Redes
+4. ET - Eventos y Vinculación
+  4.1. ET - Eventos y Formación
+    4.1.1. ET - Semana UIFCE
+    4.1.2. ET - Hackatón Bizagi
+    4.1.3. ET - Microtalleres
+      4.1.3.1. ET - Microtaller Lógica de Programación
+    4.1.4. ET - Conferencia Transformación Digital
+    4.1.5. ET - Feria de Servicios UNAL
+    4.1.6. ET - Página de Oferta Permanente
+  4.2. ET - Alianzas y Comunidad
+    4.2.1. ET - Red Ejecutiva
+    4.2.2. ET - Tracker de Egresados
+    4.2.3. ET - Red de Aliados Académicos
+    4.2.4. ET - Extensión Solidaria
+    4.2.5. ET - Divulgación a Primeros Semestres
+5. ET - Gestión Interna
+  5.1. ET - Documentación y Memoria
+    5.1.1. ET - Diagnóstico DOFA
+    5.1.2. ET - Memorias 2026-2S
+    5.1.3. ET - Memoria Audiovisual del Equipo
+    5.1.4. ET - Propuesta de Reorganización del Drive
+    5.1.5. ET - Repositorio Documental Permanente
+  5.2. ET - Normativa y Cumplimiento
+    5.2.1. ET - Términos y Condiciones
+    5.2.2. ET - Consentimiento de Imagen
+      5.2.2.1. ET - Autorizaciones Editables
+      5.2.2.2. ET - Consentimientos Firmados PDF {r}
+  5.3. ET - Mejora de Procesos
+    5.3.1. ET - ET en Marcha
+    5.3.2. ET - Seguimiento de Gastos
+    5.3.3. ET - Canal de WhatsApp Business
+    5.3.4. ET - Experiencia NFC
+    5.3.5. ET - Repositorio de Material con IA
+6. ET - Informe de Gestión
+  6.1. ET - Power BI`,
+  procs:[['1. Planeación y Gestión','Carpeta de gestión del equipo: planeación, cronograma, actas, equipo y empalme, presupuesto y protocolos.','o'],['2. Articulación Interna','Línea 1. Una carpeta por área con la que se trabaja, más acompañamiento transversal.','o'],['3. Comunicación','Línea 2. Producción de contenido, carteleras y pantallas, y canales digitales.','o'],['4. Eventos y Vinculación','Línea 3. Semana UIFCE, microtalleres, conferencias, ferias, alianzas y comunidad.','o'],['5. Gestión Interna','Línea 4. Documentación y memoria, normativa y consentimientos, y mejora de procesos.','o'],['6. Informe de Gestión','Datos de Power BI, informe y presentación.','o']],
+  files:['Equipo y Empalme y Consentimientos Firmados PDF tienen acceso restringido.','Cronograma y protocolos de difusión en 1. Planeación y Gestión.','Control de microtalleres y formatos de inscripción en 4.1.3. Microtalleres.'],
+  note:'Estrategias Tecnológicas mantiene aparte un repositorio con la línea gráfica de la UIFCE en la carpeta <b>Pack UIFCE</b>.'},
  {s:'GC',k:'gc',n:6,name:'Gestión del Conocimiento',desc:'Repositorio, capacitación interna de monitores, gestión documental, observatorio, backup semestral y política de manejo de información. Además vela por que todas las áreas cumplan esta guía.',
   tree:`1. GC - Planeación
   1.1. GC - Actividades Junior
@@ -186,5 +249,6 @@ window.AREAS=[
   9.n. VT - [Nombre del Proyecto o Monitor]
 10. VT - Informe de Gestión`,
   procs:[['1. Planeación y Gestión','Planeación, avances y presentaciones.','o'],['2. Capacitación Inicial','Una carpeta por monitor en capacitación.','o'],['3. Actualización','Matriz de revisión y una carpeta por curso con seis etapas.','o'],['4. Cursos desde Cero','Una carpeta por curso nuevo.','s'],['5. Apoyos y Solicitudes','Una carpeta por apoyo o solicitud atendida.','s'],['6. Gestión de Flujo de Trabajo','Plantillas de Articulate, Genially y guionización.','o'],['7. Exploración de Chatbot','Pruebas y documentación del chatbot.','s'],['8. Exploración de Nuevos Cursos','Posibles cursos a virtualizar.','s'],['9. Proyectos de Estudio Junior','Una carpeta por proyecto o monitor junior.','o'],['10. Informe de Gestión','Matriz preliminar, informe y productos finales.','o']],
-  files:['Planeación, bitácora de cursos y registro de proyectos virtualizados en 1. Planeación y Gestión.','Guiones, plantillas, enlaces y videos en la etapa correspondiente de cada proyecto.']}
+  files:['Planeación, bitácora de cursos y registro de proyectos virtualizados en 1. Planeación y Gestión.','Guiones, plantillas, enlaces y videos en la etapa correspondiente de cada proyecto.'],
+  note:'Virtualización mantiene aparte un repositorio con los OVA de los cursos en la carpeta <b>Virtualización Académica</b>.'}
 ];

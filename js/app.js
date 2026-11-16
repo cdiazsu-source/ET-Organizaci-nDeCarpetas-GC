@@ -4,6 +4,7 @@ const AREAS=window.AREAS;
 
 const FOLDER='<svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5H9l2 2h8.5A1.5 1.5 0 0 1 21 8.5v9A1.5 1.5 0 0 1 19.5 19h-15A1.5 1.5 0 0 1 3 17.5z" fill="currentColor"/></svg>';
 const SHORT='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>';
+const LOCK='<span class="lock" title="Acceso restringido"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Acceso restringido</span>';
 const esc=s=>s.replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 let autoAnimate=()=>{}, animateFn=null;
@@ -33,7 +34,8 @@ function renderList(nodes,ul){
     const el=document.createElement(has?'button':'div');
     el.className='node';
     if(has){el.type='button';el.setAttribute('aria-expanded','false')}
-    el.innerHTML=`<span class="car">${has?'›':''}</span>${FOLDER}<span>${fmt(n.label)}${esc(S)}</span>`;
+    const r=/\s*\{r\}$/.test(n.label),lbl=n.label.replace(/\s*\{r\}$/,'');
+    el.innerHTML=`<span class="car">${has?'›':''}</span>${FOLDER}<span>${fmt(lbl)}${esc(S)}</span>${r?LOCK:''}`;
     li.appendChild(el);
     if(has){
       const sub=document.createElement('ul');li.appendChild(sub);autoAnimate(sub);
@@ -62,6 +64,7 @@ function showArea(i){
      <h3 style="margin-bottom:8px">Carpetas de proceso</h3>
      <table class="ptable"><tbody>${a.procs.map(p=>`<tr><td>${esc(p[0])}</td><td><div>${p[1]}</div>${pill[p[2]]}</td></tr>`).join('')}</tbody></table>
      <div class="files"><b>Archivos sueltos sugeridos</b>${a.files.map(f=>`<span>${f}</span>`).join('')}</div>
+     ${a.note?`<aside class="repo-note"><b>Nota aclaratoria</b><p>${a.note}</p></aside>`:''}
    </div>`;
   const root=panel.querySelector('#treeRoot');autoAnimate(root);
   renderList(nodes,root);

@@ -142,6 +142,7 @@ button.node:hover{background:var(--surface)}
 .node svg{flex:none;color:var(--primary)}
 .node .num{font-weight:600}
 .node .var{color:var(--cyan-ink);font-style:italic}
+.node .lock{display:inline-flex;align-items:center;gap:4px;margin-left:6px;font-family:var(--f-display);font-size:.62rem;font-weight:800;letter-spacing:.04em;padding:2px 8px;border-radius:999px;background:var(--warn-soft);color:var(--warn)} .node .lock svg{color:currentColor}
 .node.short{color:var(--text)} .node.short svg{color:var(--cyan-ink)}
 .ptable{width:100%;border-collapse:collapse;font-size:.88rem}
 .ptable td{padding:10px 6px;border-top:1px solid var(--border);vertical-align:top}
@@ -149,6 +150,9 @@ button.node:hover{background:var(--surface)}
 .pill{display:inline-block;font-family:var(--f-display);font-size:.66rem;font-weight:800;letter-spacing:.04em;padding:3px 9px;border-radius:999px;white-space:nowrap;margin-top:5px}
 .pill.o{background:var(--ok-soft);color:var(--ok)} .pill.s{background:var(--warn-soft);color:var(--warn)} .pill.l{background:#DFF6FF;color:var(--cyan-ink)}
 .files{margin-top:16px;padding-top:14px;border-top:1px solid var(--border);font-size:.86rem;display:grid;gap:6px}
+.repo-note{margin-top:16px;padding:12px 14px;border-radius:14px;background:#E8F9FF;border:1px solid #9FE5FA;border-left:5px solid var(--cyan);font-size:.86rem}
+.repo-note b{display:block;font-family:var(--f-display);color:var(--navy);font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.repo-note p{margin:0} .repo-note p b{display:inline;font-size:inherit;letter-spacing:0;text-transform:none;font-family:'JetBrains Mono',monospace;background:#000;color:var(--cyan);padding:0 6px;border-radius:6px;font-weight:600}
 .files b{font-family:var(--f-display);color:var(--navy);font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
 
 /* ---------- Validador ---------- */
